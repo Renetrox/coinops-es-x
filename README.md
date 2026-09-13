@@ -1,4 +1,5 @@
 # CoinOPS ES-X
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d6b03f45-cd3b-44d6-856b-d68a3a2bd473" />
 
 Adaptación del tema **CoinOPS** para [EmulationStation-X](https://github.com/Renetrox/EmulationStation-X).
 
