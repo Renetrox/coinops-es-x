@@ -184,72 +184,74 @@
             <zIndex>30</zIndex>
         </video>
 
-        <!-- Rueda vertical basada en el carrusel propio de ES-X. -->
-        <textlist name="gamelist">
-            <origin>0 0</origin>
-            <pos>0.530 0</pos>
-            <size>0.470 0.80</size>
+      <!-- Rueda vertical basada en el carrusel propio de ES-X. -->
+<textlist name="gamelist">
+    <origin>0 0</origin>
+    <pos>0.530 0</pos>
+    <size>0.470 0.80</size>
 
-            <orientation>vertical</orientation>
-            <carouselMode>true</carouselMode>
-            <carouselLoop>true</carouselLoop>
+    <orientation>vertical</orientation>
+    <carouselMode>true</carouselMode>
+    <carouselLoop>true</carouselLoop>
 
-            <carouselImage>true</carouselImage>
-            <carouselImageType>marquee</carouselImageType>
-            <carouselImageFit>contain</carouselImageFit>
-            <carouselImagePadding>0.02 0.02</carouselImagePadding>
+    <carouselImage>true</carouselImage>
+    <carouselImageType>marquee</carouselImageType>
+    <carouselImageFit>contain</carouselImageFit>
+    <carouselImagePadding>0.02 0.02</carouselImagePadding>
+    <carouselShowText>true</carouselShowText>
 
-            <carouselShowText>true</carouselShowText>
+    <carouselItemRotation>-3.5</carouselItemRotation>
+    <carouselItemRotationOrigin>4.03 0.5</carouselItemRotationOrigin>
 
-            <carouselItemRotation>-2</carouselItemRotation>
-            <carouselItemRotationOrigin>4.03 0.5</carouselItemRotationOrigin>
+    <carouselImageLockSize>true</carouselImageLockSize>
+    <carouselImageBoxSize>0.40 0.16</carouselImageBoxSize>
 
+    <logoAlignment>center</logoAlignment>
+    <logoSize>0.40 0.14</logoSize>
+    <logoScale>1.50</logoScale>
+    <logoSpacingY>0.135</logoSpacingY>
+    <logoOffsetX>0.12</logoOffsetX>
 
-            <carouselImageLockSize>true</carouselImageLockSize>
-            <carouselImageBoxSize>0.40 0.16</carouselImageBoxSize>
+    <maxLogoCount>7</maxLogoCount>
+    <minLogoOpacity>0.55</minLogoOpacity>
+    <scaledLogoSpacing>0.18</scaledLogoSpacing>
 
-            <logoAlignment>center</logoAlignment>
-            <logoSize>0.40 0.14</logoSize>
-            <logoScale>1.50</logoScale>
-            <logoSpacingY>0.135</logoSpacingY>
-            <logoOffsetX>0.12</logoOffsetX>
+    <primaryColor>FFFFFFFF</primaryColor>
+    <secondaryColor>FFFFFFFF</secondaryColor>
+    <selectedColor>FFFFFFFF</selectedColor>
 
-            <maxLogoCount>7</maxLogoCount>
-            <minLogoOpacity>0.55</minLogoOpacity>
-            <scaledLogoSpacing>0.18</scaledLogoSpacing>
-
-<primaryColor>FFFFFFFF</primaryColor>
-<secondaryColor>FFFFFFFF</secondaryColor>
-<selectedColor>FFFFFFFF</selectedColor>
-
-            <carouselItemColor>00000000</carouselItemColor>
-            <carouselSelectedItemColor>00000000</carouselSelectedItemColor>
-            <zIndex>60</zIndex>
-        </textlist>
+    <carouselItemColor>00000000</carouselItemColor>
+    <carouselSelectedItemColor>00000000</carouselSelectedItemColor>
+    <zIndex>60</zIndex>
+</textlist>
 
         <!-- Metadata inferior de la variante Default. -->
-        <text name="md_name">
-            <origin>0 0</origin>
-            <pos>0.010 0.825</pos>
-            <size>0.43 0.055</size>
-            <fontPath>./_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
-            <fontSize>0.038</fontSize>
-            <color>BBBBBBFF</color>
-            <alignment>left</alignment>
-            <zIndex>65</zIndex>
-        </text>
+       <text name="md_name">
+    <origin>0 0</origin>
+    <pos>0.010 0.825</pos>
+    <size>0.43 0.055</size>
+    <fontPath>./_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
+    <fontSize>0.038</fontSize>
+    <color>FFFFFFFF</color>
+    <textStrokeColor>000000FF</textStrokeColor>
+    <textStrokeSize>2</textStrokeSize>
+    <alignment>left</alignment>
+    <zIndex>65</zIndex>
+</text>
 
-        <text name="md_description">
-            <origin>0 0</origin>
-            <pos>0.010 0.8879</pos>
-            <size>0.43 0.112</size>
-            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
-            <fontSize>0.019</fontSize>
-            <color>BBBBBBFF</color>
-            <lineSpacing>1.10</lineSpacing>
-            <alignment>left</alignment>
-            <zIndex>65</zIndex>
-        </text>
+<text name="md_description">
+    <origin>0 0</origin>
+    <pos>0.010 0.8879</pos>
+    <size>0.43 0.112</size>
+    <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+    <fontSize>0.019</fontSize>
+    <color>FFFFFFFF</color>
+    <textStrokeColor>000000FF</textStrokeColor>
+    <textStrokeSize>1</textStrokeSize>
+    <lineSpacing>1.10</lineSpacing>
+    <alignment>left</alignment>
+    <zIndex>65</zIndex>
+</text>
 
         <image name="md_thumbnail">
             <origin>0.5 1</origin>
@@ -318,15 +320,83 @@
             <zIndex>65</zIndex>
         </datetime>
 
+<image name="iconPlayers" extra="true">
+    <origin>0.5 0.5</origin>
+    <pos>0.684 0.900</pos>
+    <size>0.022 0.022</size>
+    <path>./_inc/images/icon-players.svg</path>
+    <color>BBBBBBFF</color>
+    <zIndex>65</zIndex>
+</image>
+
+<image name="iconDeveloper" extra="true">
+    <origin>0.5 0.5</origin>
+    <pos>0.684 0.935</pos>
+    <size>0.022 0.022</size>
+    <path>./_inc/images/icon-developer.svg</path>
+    <color>BBBBBBFF</color>
+    <zIndex>65</zIndex>
+</image>
+
+<image name="iconPublisher" extra="true">
+    <origin>0.5 0.5</origin>
+    <pos>0.684 0.970</pos>
+    <size>0.022 0.022</size>
+    <path>./_inc/images/icon-publisher.svg</path>
+    <color>BBBBBBFF</color>
+    <zIndex>65</zIndex>
+</image>
+
+<!-- Iconos de fecha, contador y última partida. -->
+<text name="md_lbl_releasedate">
+    <origin>0.5 0.5</origin>
+    <pos>0.866 0.900</pos>
+    <size>0.025 0.030</size>
+    <text>📅</text>
+    <fontSize>0.021</fontSize>
+    <color>FFFFFFFF</color>
+    <alignment>center</alignment>
+    <zIndex>65</zIndex>
+</text>
+
+<text name="md_lbl_playcount">
+    <origin>0.5 0.5</origin>
+    <pos>0.866 0.935</pos>
+    <size>0.025 0.030</size>
+    <text>▶</text>
+    <fontSize>0.021</fontSize>
+    <color>FFFFFFFF</color>
+    <alignment>center</alignment>
+    <zIndex>65</zIndex>
+</text>
+
+<text name="md_lbl_lastplayed">
+    <origin>0.5 0.5</origin>
+    <pos>0.866 0.970</pos>
+    <size>0.025 0.030</size>
+    <text>🕒</text>
+    <fontSize>0.021</fontSize>
+    <color>FFFFFFFF</color>
+    <alignment>center</alignment>
+    <zIndex>65</zIndex>
+</text>
+
+<text name="md_playcount">
+    <origin>0 0.5</origin>
+    <pos>0.885 0.935</pos>
+    <size>0.107 0.025</size>
+    <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+    <fontSize>0.020</fontSize>
+    <color>BBBBBBFF</color>
+    <zIndex>65</zIndex>
+</text>
+
         <text name="md_lbl_rating"><visible>false</visible></text>
-        <text name="md_lbl_releasedate"><visible>false</visible></text>
         <text name="md_lbl_developer"><visible>false</visible></text>
         <text name="md_lbl_publisher"><visible>false</visible></text>
         <text name="md_lbl_genre"><visible>false</visible></text>
         <text name="md_lbl_players"><visible>false</visible></text>
-        <text name="md_lbl_lastplayed"><visible>false</visible></text>
-        <text name="md_lbl_playcount"><visible>false</visible></text>
-        <text name="md_playcount"><visible>false</visible></text>
+
     </view>
 
     <view name="screen">
