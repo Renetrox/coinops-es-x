@@ -1,0 +1,353 @@
+<!--
+    CoinOPS for EmulationStation-X
+    Based on CoinOPS-ES-DE by TheGrizzMD.
+    CoinOPS by BritneysPAIRS; cabinet artwork by gjsmsmith;
+    system artwork based on ARTFLIX by Alekfull and ARTFLIX-Cobalto by Galisteo.
+
+    License: Creative Commons CC-BY-NC-SA 2.0
+    ES-X adaptation: Renetrox
+-->
+
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <include>./navigationsounds.xml</include>
+    <include>./_inc/systems/system-metadata/_default.xml</include>
+    <include>./_inc/systems/system-metadata/${system.theme}.xml</include>
+
+    <!-- =====================================================
+         SYSTEM VIEW
+         ===================================================== -->
+    <view name="system">
+        <image name="backgroundpromo" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_inc/systems/fanart/${system.theme}.jpg</path>
+            <zIndex>9</zIndex>
+        </image>
+
+        <image name="systembackgroundoverlay" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_inc/images/paneloverlay.png</path>
+            <zIndex>10</zIndex>
+        </image>
+
+        <image name="logo">
+            <path>./_inc/systems/logos/${system.theme}.png</path>
+            <maxSize>0.25 0.125</maxSize>
+        </image>
+
+        <carousel name="systemcarousel">
+            <origin>0 0</origin>
+            <pos>-0.17 0.40</pos>
+            <size>2 0.40</size>
+            <type>horizontal</type>
+            <color>00000000</color>
+            <maxLogoCount>3</maxLogoCount>
+            <logoSize>0.25 0.125</logoSize>
+            <logoScale>1.35</logoScale>
+            <logoAlignment>left</logoAlignment>
+            <logoSpacingX>0.25</logoSpacingX>
+            <scaledLogoSpacing>1.05</scaledLogoSpacing>
+            <minLogoOpacity>0.50</minLogoOpacity>
+            <zIndex>40</zIndex>
+        </carousel>
+
+        <text name="system-description">
+            <origin>0 0</origin>
+            <pos>0.055 0.72</pos>
+            <size>0.50 0.18</size>
+            <text>${systemDescription}</text>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+
+            <fontSize>0.024</fontSize>
+            <lineSpacing>1.10</lineSpacing>
+            <color>BBBBBBFF</color>
+            <alignment>left</alignment>
+            <zIndex>50</zIndex>
+        </text>
+
+        <text name="systemGameCount">
+            <origin>1 1</origin>
+            <pos>0.975 0.975</pos>
+            <size>0.25 0.05</size>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>BBBBBBFF</color>
+            <alignment>right</alignment>
+            <zIndex>50</zIndex>
+        </text>
+
+        <image name="system-controllers-outline" extra="true">
+            <origin>1 0.5</origin>
+            <pos>0.975 0.8</pos>
+            <maxSize>0.30 0.25</maxSize>
+            <path>./_inc/systems/system-controllers-outline/${system.theme}.svg</path>
+            
+            <zIndex>11</zIndex>
+        </image>
+    </view>
+
+    <!-- =====================================================
+         COMMON GAMELIST LAYERS
+         ===================================================== -->
+    <view name="basic, detailed, video">
+        <image name="coverfanartfallback" extra="true">
+            <origin>1 1</origin>
+            <pos>1 1</pos>
+            <maxSize>1 1</maxSize>
+            <path>./_inc/images/defaultcover.png</path>
+            <zIndex>19</zIndex>
+        </image>
+
+        <image name="md_fanart">
+            <origin>1 1</origin>
+            <pos>1 1</pos>
+            <maxSize>1 1</maxSize>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>20</zIndex>
+        </image>
+
+        <image name="fanarthue" extra="true">
+            <origin>1 1</origin>
+            <pos>1 1</pos>
+            <maxSize>1 1</maxSize>
+            <path>./_inc/images/fanarthue.png</path>
+            <zIndex>21</zIndex>
+        </image>
+
+        <image name="videohide" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_inc/images/videohide.png</path>
+            <zIndex>29</zIndex>
+        </image>
+
+        <image name="cabinetimage" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+    <path>./_inc/systems/cabinets/${system.theme}.png</path>
+    <default>./_inc/images/fallbackcabinet.png</default>
+    <zIndex>35</zIndex>
+</image>
+
+        <image name="gamelistbackgroundoverlay" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_inc/images/overlaydiamonds2.png</path>
+            <zIndex>45</zIndex>
+        </image>
+
+        <image name="gamelistforegroundoverlay" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_inc/images/overlay.png</path>
+            <zIndex>55</zIndex>
+        </image>
+
+        <image name="systemlogo" extra="true">
+            <origin>0.5 0.5</origin>
+            <pos>0.2865 0.122</pos>
+            <maxSize>0.265 0.15</maxSize>
+            <path>./_inc/systems/logos/${system.theme}.svg</path>
+            <zIndex>56</zIndex>
+        </image>
+
+        <helpsystem name="help">
+            <origin>0.5 0</origin>
+            <pos>0.4 0.005</pos>
+            <textColor>BBBBBBFF</textColor>
+            <iconColor>BBBBBBFF</iconColor>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.025</fontSize>
+        </helpsystem>
+    </view>
+
+    <!-- =====================================================
+         COINOPS GAMELIST: VIDEO + WHEEL
+         ===================================================== -->
+    <view name="basic, detailed, video">
+        <video name="md_video">
+            <origin>0.5 0.5</origin>
+            <pos>0.287 0.538</pos>
+            <maxSize>0.358 0.52</maxSize>
+            <delay>0</delay>
+            <showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>true</showSnapshotDelay>
+            <zIndex>30</zIndex>
+        </video>
+
+        <!-- Rueda vertical basada en el carrusel propio de ES-X. -->
+        <textlist name="gamelist">
+            <origin>0 0</origin>
+            <pos>0.530 0</pos>
+            <size>0.470 0.80</size>
+
+            <orientation>vertical</orientation>
+            <carouselMode>true</carouselMode>
+            <carouselLoop>true</carouselLoop>
+
+            <carouselImage>true</carouselImage>
+            <carouselImageType>marquee</carouselImageType>
+            <carouselImageFit>contain</carouselImageFit>
+            <carouselImagePadding>0.02 0.02</carouselImagePadding>
+
+            <carouselShowText>true</carouselShowText>
+
+            <carouselItemRotation>-2</carouselItemRotation>
+            <carouselItemRotationOrigin>4.03 0.5</carouselItemRotationOrigin>
+
+
+            <carouselImageLockSize>true</carouselImageLockSize>
+            <carouselImageBoxSize>0.40 0.16</carouselImageBoxSize>
+
+            <logoAlignment>center</logoAlignment>
+            <logoSize>0.40 0.14</logoSize>
+            <logoScale>1.50</logoScale>
+            <logoSpacingY>0.135</logoSpacingY>
+            <logoOffsetX>0.12</logoOffsetX>
+
+            <maxLogoCount>7</maxLogoCount>
+            <minLogoOpacity>0.55</minLogoOpacity>
+            <scaledLogoSpacing>0.18</scaledLogoSpacing>
+
+<primaryColor>FFFFFFFF</primaryColor>
+<secondaryColor>FFFFFFFF</secondaryColor>
+<selectedColor>FFFFFFFF</selectedColor>
+
+            <carouselItemColor>00000000</carouselItemColor>
+            <carouselSelectedItemColor>00000000</carouselSelectedItemColor>
+            <zIndex>60</zIndex>
+        </textlist>
+
+        <!-- Metadata inferior de la variante Default. -->
+        <text name="md_name">
+            <origin>0 0</origin>
+            <pos>0.010 0.825</pos>
+            <size>0.43 0.055</size>
+            <fontPath>./_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
+            <fontSize>0.038</fontSize>
+            <color>BBBBBBFF</color>
+            <alignment>left</alignment>
+            <zIndex>65</zIndex>
+        </text>
+
+        <text name="md_description">
+            <origin>0 0</origin>
+            <pos>0.010 0.8879</pos>
+            <size>0.43 0.112</size>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.019</fontSize>
+            <color>BBBBBBFF</color>
+            <lineSpacing>1.10</lineSpacing>
+            <alignment>left</alignment>
+            <zIndex>65</zIndex>
+        </text>
+
+        <image name="md_thumbnail">
+            <origin>0.5 1</origin>
+            <pos>0.58 0.99</pos>
+            <maxSize>0.18 0.30</maxSize>
+            <zIndex>165</zIndex>
+        </image>
+
+        <rating name="md_rating">
+            <origin>0 0.5</origin>
+            <pos>0.6765 0.865</pos>
+            <size>0.16 0.04</size>
+            <filledPath>./_inc/images/star_filled.svg</filledPath>
+            <unfilledPath>./_inc/images/star_unfilled.svg</unfilledPath>
+            <zIndex>65</zIndex>
+        </rating>
+
+        <text name="md_players">
+            <origin>0 0.5</origin>
+            <pos>0.700 0.900</pos>
+            <size>0.10 0.025</size>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>BBBBBBFF</color>
+            <zIndex>65</zIndex>
+        </text>
+
+        <text name="md_developer">
+            <origin>0 0.5</origin>
+            <pos>0.700 0.935</pos>
+            <size>0.20 0.025</size>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>BBBBBBFF</color>
+            <zIndex>65</zIndex>
+        </text>
+
+        <text name="md_publisher">
+            <origin>0 0.5</origin>
+            <pos>0.700 0.970</pos>
+            <size>0.20 0.025</size>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>BBBBBBFF</color>
+            <zIndex>65</zIndex>
+        </text>
+
+        <datetime name="md_releasedate">
+            <origin>0 0.5</origin>
+            <pos>0.885 0.900</pos>
+            <size>0.107 0.025</size>
+            <format>%Y-%m-%d</format>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>BBBBBBFF</color>
+            <zIndex>65</zIndex>
+        </datetime>
+
+        <datetime name="md_lastplayed">
+            <origin>0 0.5</origin>
+            <pos>0.885 0.970</pos>
+            <size>0.107 0.025</size>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>BBBBBBFF</color>
+            <zIndex>65</zIndex>
+        </datetime>
+
+        <text name="md_lbl_rating"><visible>false</visible></text>
+        <text name="md_lbl_releasedate"><visible>false</visible></text>
+        <text name="md_lbl_developer"><visible>false</visible></text>
+        <text name="md_lbl_publisher"><visible>false</visible></text>
+        <text name="md_lbl_genre"><visible>false</visible></text>
+        <text name="md_lbl_players"><visible>false</visible></text>
+        <text name="md_lbl_lastplayed"><visible>false</visible></text>
+        <text name="md_lbl_playcount"><visible>false</visible></text>
+        <text name="md_playcount"><visible>false</visible></text>
+    </view>
+
+    <view name="screen">
+        <text name="clock">
+            <origin>0 0.5</origin>
+            <pos>0.016 0.035</pos>
+            <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>FFFFFFFF</color>
+        </text>
+
+        <image name="bluetooth">
+    <origin>0 0.5</origin>
+    <pos>0.065 0.035</pos>
+    <size>0.018 0.018</size>
+</image>
+
+<image name="network">
+    <origin>0 0.5</origin>
+    <pos>0.090 0.035</pos>
+    <size>0.018 0.018</size>
+        </image>
+    </view>
+</theme>
