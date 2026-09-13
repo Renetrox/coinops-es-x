@@ -1,62 +1,98 @@
-# CoinOPS for EmulationStation Desktop Edition (ES-DE)
+# CoinOPS ES-X
 
-This theme is a mashup of a CoinOPS theme by BritneysPAIRS (BP) and gjsmsmith, as well as [ARTFLIX](https://github.com/fagnerpc/Alekfull-ARTFLIX/) by [Alekfull](https://github.com/fagnerpc/), and [ARTFLIX-Colbalto](https://github.com/galisteogames/ARTFLIX-Cobalto/) by [Galisteo](https://github.com/galisteogames/)
+Adaptación del tema **CoinOPS** para [EmulationStation-X](https://github.com/Renetrox/EmulationStation-X).
 
-## **Preview**
+Esta versión conserva la estética de gabinete/televisor y la rueda de logos de CoinOPS, pero fue reorganizada para aprovechar las funciones propias de ES-X. No es una copia directa del tema para ES-DE ni requiere sus variantes.
 
-| System View | Gamelist View |
-|----|----|
-| ![Base Profile Screenshot 2023 04 21 - 20 11 03 68](https://user-images.githubusercontent.com/39314057/233753948-e11d35ac-d8a6-44dd-8e16-a787bcc3eec6.png) | ![Base Profile Screenshot 2023 04 21 - 20 11 17 86](https://user-images.githubusercontent.com/39314057/233753951-3a1f60e7-46ff-48dd-99ce-6f72f5b2d282.png) |
+## Características
 
-## **Configuration Options**
+### Vista de sistemas
 
-- The theme has a simple set of options that can be changed directly from the UI Settings menu of ES-DE 
-- `Theme Variant` - sets the layout used for the sytem gamelist views.  There are 3 variants to choose from:
-   - `Default` - Default view that displays system and gamelist metadata for each view
-   - `No Hue` - The same as the Default view, but no blue/purple hue is applied to the system and fan art overlays
-   - `Simple` - A minimalistic view with no metadata in the system or gamelist views
-   - `Simple With Cover Art` - A minimalistic view with no metadata in the system or gamelist views (with cover art)
-- `Theme Aspect Ratio` - sets the aspect ratio the theme will render at. If needed, this can be changed to match the aspect ratio of your screen (though it should happen automatically).
-   - Supported Aspect Ratios:
-      - 16:9
-      - 16:10
-      - 19.5:9
+- Carrusel horizontal de tres sistemas.
+- Sistema seleccionado alineado con la ilustración de su control.
+- Fanart y descripción propios de cada plataforma.
+- Logo, contador de juegos y arte del control.
+- Reloj e indicadores de red y Bluetooth integrados en la esquina superior izquierda.
+- Recursos dinámicos mediante `${system.theme}`.
 
-### Preview of the Theme Variants (16:9)
+### Lista de juegos
 
-| Theme Variant | System View | Gamelist View |
-|----|----|----|
-| Default | ![Base Profile Screenshot 2023 04 21 - 20 11 03 68](https://user-images.githubusercontent.com/39314057/233753948-e11d35ac-d8a6-44dd-8e16-a787bcc3eec6.png) | ![Base Profile Screenshot 2023 04 21 - 20 11 17 86](https://user-images.githubusercontent.com/39314057/233753951-3a1f60e7-46ff-48dd-99ce-6f72f5b2d282.png) |
-| No Hue | ![Base Profile Screenshot 2023 04 24 - 15 27 29 90](https://user-images.githubusercontent.com/39314057/234110145-2d373233-012c-4f54-9e79-2f66284345c5.png) | ![Base Profile Screenshot 2023 04 24 - 15 29 26 05](https://user-images.githubusercontent.com/39314057/234110210-d368bda4-0259-4eba-8810-97cca475cab6.png)
-| Simple | ![Base Profile Screenshot 2023 04 25 - 17 47 33 42](https://user-images.githubusercontent.com/39314057/234423620-a94bc4a4-b3b0-4685-9eee-36843844e58c.png) | ![Base Profile Screenshot 2023 04 25 - 17 47 39 11](https://user-images.githubusercontent.com/39314057/234423703-8da13b27-6f26-4faf-a8c9-64467e825bfb.png) 
-| Simple With Cover Art | ![Base Profile Screenshot 2023 07 09 - 09 19 43 39](https://github.com/TheGrizzMD/coinops-es-de/assets/39314057/4255255a-b932-4cb3-8740-471db66a8ee4) | ![Base Profile Screenshot 2023 07 09 - 09 20 24 19](https://github.com/TheGrizzMD/coinops-es-de/assets/39314057/e8a91c04-b7b3-4cce-a098-e3ae91e864ed)
+- Rueda vertical curva basada en el carrusel nativo de ES-X.
+- Logos *marquee* y nombre del juego como alternativa cuando no existe una imagen.
+- Vídeo con captura como alternativa.
+- Fanart, gabinete o televisor y carátula.
+- Título y descripción en blanco con contorno negro para conservar la legibilidad sin cubrir el gabinete con un panel.
+- Valoración, jugadores, desarrollador, editor, fecha, veces jugado y última partida.
+- Iconos compactos para la metadata.
+- Gabinete genérico cuando el sistema no dispone de uno propio.
+- Compatible con las vistas `basic`, `detailed` y `video`.
 
-## **Additional Notes**
+## Compatibilidad
 
-### Scraping:
+El tema está desarrollado y probado para **EmulationStation-X** en formato **16:9**.
 
-* This theme looks best when the following are set to be scraped under Scraper > Content Settings:
-   * Game Names
-   * Ratings
-   * Other Metadata
-   * Videos
-   * Box Cover Images
-   * Marquee (Wheel) Images
-   * Fan Art Images
-* Other media is optional and will be used in cases where one of the above is missing (for example Screenshot images will be used if Videos are missing)
+Varias propiedades utilizadas por la rueda —como `carouselMode`, `carouselItemRotation`, `logoSpacingY`, `logoOffsetX` y el texto alternativo condicional— dependen de las extensiones incorporadas en ES-X. Por ese motivo, el funcionamiento completo no está garantizado en otras variantes de EmulationStation.
 
-### Per game cabinet art:
-* This theme supports using a unique cabinet or TV images for each game
-* I have made a set of these images available via a theme addon here: https://github.com/TheGrizzMD/coinops-es-de-addons
+## Instalación
 
-## **Acknowledgments**
+Clona el repositorio dentro de la carpeta de temas de EmulationStation:
 
-- Cabinet Wheel theme from the CoinOPS project by BritneysPAIRS (BP).
-- TV/Arcade Cabinet artwork by gjsmsmith.
-- System Logos, and System images from [ARTFLIX](https://github.com/fagnerpc/Alekfull-ARTFLIX/) and [ARTFLIX-Colbalto](https://github.com/galisteogames/ARTFLIX-Cobalto/)
-- If I overlooked any credits or acknowledgements, please let me know and I will add them.
+```bash
+cd ~/.emulationstation/themes
+git clone https://github.com/Renetrox/coinops-es-x.git
+```
 
-## **License**
+Después, abre EmulationStation-X y selecciona **coinops-es-x** en las opciones de interfaz.
 
-Creative Commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/2.0/
-You are free to share and adapt this theme as long as you provide attribution back as well share any updates you make under the same licence terms.
+Para actualizar una instalación existente:
+
+```bash
+cd ~/.emulationstation/themes/coinops-es-x
+git pull
+```
+
+## Multimedia recomendada
+
+Para aprovechar todo el diseño, cada juego puede incluir:
+
+- Logo o *marquee*.
+- Vídeo.
+- Captura de pantalla.
+- Fanart.
+- Carátula o miniatura.
+- Metadata: valoración, jugadores, desarrollador, editor, fecha, contador de partidas y última partida.
+
+Si un juego no tiene *marquee*, ES-X muestra su nombre en la rueda. Si no tiene vídeo, puede mostrar su captura. La disponibilidad final depende de los medios registrados en el `gamelist.xml`.
+
+## Estructura de recursos por sistema
+
+El tema busca los recursos usando el identificador `${system.theme}`:
+
+```text
+_inc/systems/fanart/<sistema>.jpg
+_inc/systems/logos/<sistema>.png
+_inc/systems/logos/<sistema>.svg
+_inc/systems/cabinets/<sistema>.png
+_inc/systems/system-controllers-outline/<sistema>.svg
+_inc/systems/system-metadata/<sistema>.xml
+```
+
+El nombre de cada archivo debe coincidir exactamente con el identificador del tema asignado al sistema. Esto también se aplica a sistemas personalizados y colecciones.
+
+## Créditos
+
+- Tema y concepto original de CoinOPS: **BritneysPAIRS (BP)**.
+- Arte de gabinetes y televisores: **gjsmsmith**.
+- Base del tema CoinOPS para ES-DE: **TheGrizzMD**.
+- Logos e ilustraciones de sistemas basados en [Alekfull ARTFLIX](https://github.com/fagnerpc/Alekfull-ARTFLIX/) y [ARTFLIX-Cobalto](https://github.com/galisteogames/ARTFLIX-Cobalto/).
+- Adaptación, integración y ajustes para EmulationStation-X: **Renetrox**.
+
+Si falta alguna atribución, puedes comunicarlo mediante un *issue* para corregirla.
+
+## Licencia
+
+Este proyecto se distribuye bajo **Creative Commons Attribution-NonCommercial-ShareAlike 2.0 (CC BY-NC-SA 2.0)**.
+
+Puedes compartir y adaptar el tema siempre que mantengas la atribución, no lo utilices con fines comerciales y distribuyas las modificaciones bajo la misma licencia.
+
+Consulta los términos completos en [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/2.0/).
