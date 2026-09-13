@@ -70,13 +70,14 @@
             <zIndex>50</zIndex>
         </text>
 
-        <text name="systemGameCount">
+        <text name="systemInfo">
             <origin>1 1</origin>
             <pos>0.975 0.975</pos>
             <size>0.25 0.05</size>
             <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
             <fontSize>0.024</fontSize>
-            <color>BBBBBBFF</color>
+            <backgroundColor>00000000</backgroundColor>
+                <color>FFFFFF</color>
             <alignment>right</alignment>
             <zIndex>50</zIndex>
         </text>
@@ -162,7 +163,7 @@
 
         <helpsystem name="help">
             <origin>0.5 0</origin>
-            <pos>0.4 0.005</pos>
+            <pos>0.3 0.005</pos>
             <textColor>BBBBBBFF</textColor>
             <iconColor>BBBBBBFF</iconColor>
             <fontPath>./_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
