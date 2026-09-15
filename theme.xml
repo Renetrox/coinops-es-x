@@ -157,8 +157,8 @@
             <origin>0.5 0.5</origin>
             <pos>0.2865 0.122</pos>
             <maxSize>0.265 0.15</maxSize>
-            <path>./_inc/systems/logos/${system.theme}.svg</path>
-            <zIndex>56</zIndex>
+            <path>./_inc/systems/logos/${system.theme}.png</path>
+            <zIndex>34</zIndex>
         </image>
 
         <helpsystem name="help">
