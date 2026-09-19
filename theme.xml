@@ -15,6 +15,7 @@
     <include>./_inc/systems/system-metadata/_default.xml</include>
     <include>./_inc/systems/system-metadata/${system.theme}.xml</include>
 
+
     <!-- =====================================================
          SYSTEM VIEW
          ===================================================== -->
@@ -201,8 +202,8 @@
     <carouselImagePadding>0.02 0.02</carouselImagePadding>
     <carouselShowText>true</carouselShowText>
 
-    <carouselItemRotation>-3.5</carouselItemRotation>
-    <carouselItemRotationOrigin>4.03 0.5</carouselItemRotationOrigin>
+    <carouselItemRotation>-7.5</carouselItemRotation>
+    <carouselItemRotationOrigin>-4.0 0.5</carouselItemRotationOrigin>
 
     <carouselImageLockSize>true</carouselImageLockSize>
     <carouselImageBoxSize>0.40 0.16</carouselImageBoxSize>
