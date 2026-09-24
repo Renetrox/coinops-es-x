@@ -1,6 +1,10 @@
 # CoinOPS ES-X
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/39ac1dec-af43-499d-8b8d-097eb4b9fb7e" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d6b03f45-cd3b-44d6-856b-d68a3a2bd473" />
+
+## Vista previa
+
+| Vista de sistemas | Lista de juegos |
+|:---:|:---:|
+| ![Vista de sistemas](https://github.com/user-attachments/assets/39ac1dec-af43-499d-8b8d-097eb4b9fb7e) | ![Lista de juegos](https://github.com/user-attachments/assets/d6b03f45-cd3b-44d6-856b-d68a3a2bd473) |
 
 Adaptación del tema **CoinOPS** para [EmulationStation-X](https://github.com/Renetrox/EmulationStation-X).
 
