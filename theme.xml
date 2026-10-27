@@ -47,7 +47,7 @@
             <size>2 0.40</size>
             <type>horizontal</type>
             <color>00000000</color>
-            <maxLogoCount>3</maxLogoCount>
+            <maxLogoCount>9</maxLogoCount>
             <logoSize>0.25 0.125</logoSize>
             <logoScale>1.35</logoScale>
             <logoAlignment>left</logoAlignment>
